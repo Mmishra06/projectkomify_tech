@@ -21,7 +21,7 @@ import com.google.android.gms.vision.text.TextRecognizer;
 
 import java.io.IOException;
 
-//import android.app.DownloadManager;
+
 
 public class MainActivity extends AppCompatActivity {
     //ImageView imageView;
@@ -58,10 +58,15 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.text_view);
 
         TextRecognizer textRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
-        if (!textRecognizer.isOperational()) {
+        if (!textRecognizer.isOperational())
+
+        {
             Log.w("MainActivity", "Detector dependencies are not yet available");
-        } else {
-            cameraSource = new CameraSource.Builder(getApplicationContext(), textRecognizer)
+        }
+
+        else
+            {
+                cameraSource = new CameraSource.Builder(getApplicationContext(), textRecognizer)
                     .setFacing(CameraSource.CAMERA_FACING_BACK)
                     .setRequestedPreviewSize(1280, 1024)
                     .setRequestedFps(2.0f)
