@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jul 16 11:45:36 IST 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\PM0C82804\\AndroidStudioProjects\\Komify\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+0.path=classes.dex
+0.set=DEX
+count=1
